@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="21G320" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Beast" representedClassName="Beast" syncable="YES" codeGenerationType="class">
+        <attribute name="advices" optional="YES" attributeType="String"/>
+        <attribute name="chara" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="player" optional="YES" attributeType="String"/>
+        <relationship name="bestiary" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Bestiary" inverseName="beasts" inverseEntity="Bestiary"/>
+    </entity>
+    <entity name="Bestiary" representedClassName="Bestiary" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="Ilias Notes"/>
+        <relationship name="beasts" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Beast" inverseName="bestiary" inverseEntity="Beast"/>
+    </entity>
+</model>
