@@ -13,9 +13,17 @@ struct EditBeastView: View {
     
     var beast: FetchedResults<Beast>.Element
     
-    @State private var player = ""
-    @State private var character = ""
-    @State private var advices = ""
+    @State private var player: String
+    @State private var character: String
+    @State private var advices: String
+    
+    init(beast: Beast) {
+        self.beast = beast
+        
+        _player = State(initialValue: (beast.player ?? ""))
+        _character = State(initialValue: (beast.chara ?? ""))
+        _advices = State(initialValue: (beast.advices ?? ""))
+    }
     
     var body: some View {
         Form {

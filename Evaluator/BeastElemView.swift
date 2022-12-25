@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BeastElemView: View {
     @EnvironmentObject var dataManager: DataManager
+    @State private var showingEditView = false
     
     let beast: Beast
     
@@ -31,10 +32,14 @@ struct BeastElemView: View {
         .swipeActions(edge: .leading) { // Edit
             Button {
                 print("Editing beast \(beast.chara!)")
+                showingEditView.toggle()
             } label: {
                 Image(systemName: "pencil")
             }
             .tint(.blue)
+        }
+        .sheet(isPresented: $showingEditView) {
+            EditBeastView(beast: beast)
         }
     }
     

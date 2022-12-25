@@ -12,7 +12,6 @@ struct BestiaryView: View {
     @FetchRequest var beasts: FetchedResults<Beast>
     
     @State private var showingAddView = false
-    @State private var showingEditView = false
     @State private var focusedBeast: Beast?
     
     let bestiary: Bestiary
@@ -44,11 +43,6 @@ struct BestiaryView: View {
         .sheet(isPresented: $showingAddView) {
             AddBeastView(bestiary: bestiary)
         }
-        /*
-        .sheet(isPresented: $showingEditView) {
-            EditBeastView(beast: focusedBeast!)
-        }
-        */
     }
     
     // Deletes beast at the current offset
