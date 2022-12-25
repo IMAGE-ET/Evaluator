@@ -121,7 +121,10 @@ class DataManager: ObservableObject {
     }
     
     func delete(_ object: NSManagedObject) {
+        print("Deleting object \(object)")
         container.viewContext.delete(object)
+        
+        save()
     }
     
     // Damn did I need to shit it, this one.

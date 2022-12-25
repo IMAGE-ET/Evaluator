@@ -28,27 +28,8 @@ struct BestiaryView: View {
     var body: some View {
         Section {
             ForEach(beasts) { beast in
-                NavigationLink {
-                    EvaluationView(beast: beast)
-                    //EditBeastView(beast: beast)
-                } label: {
-                    Text(beast.player ?? "")
-                    Text("(\(beast.chara ?? ""))")
-                }
-                /*
-                .swipeActions(edge: .leading) {
-                    Button {
-                        focusedBeast = beast
-                        print(focusedBeast!)
-                        showingEditView.toggle()
-                    } label: {
-                        Text("Edit")
-                    }
-                    .tint(.blue)
-                }
-                 */
+                BeastElemView(beast: beast)
             }
-            .onDelete(perform: deleteBeast)
         } header: {
             HStack {
                 Text(bestiary.name!)
