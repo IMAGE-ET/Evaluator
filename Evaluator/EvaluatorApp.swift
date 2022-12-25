@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct EvaluatorApp: App {
     @StateObject var dataManager: DataManager

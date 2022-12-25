@@ -35,16 +35,18 @@ struct BestiaryView: View {
                     Text(beast.player ?? "")
                     Text("(\(beast.chara ?? ""))")
                 }
+                /*
                 .swipeActions(edge: .leading) {
                     Button {
                         focusedBeast = beast
-                        print(focusedBeast)
+                        print(focusedBeast!)
                         showingEditView.toggle()
                     } label: {
                         Text("Edit")
                     }
                     .tint(.blue)
                 }
+                 */
             }
             .onDelete(perform: deleteBeast)
         } header: {
@@ -61,9 +63,11 @@ struct BestiaryView: View {
         .sheet(isPresented: $showingAddView) {
             AddBeastView(bestiary: bestiary)
         }
+        /*
         .sheet(isPresented: $showingEditView) {
             EditBeastView(beast: focusedBeast!)
         }
+        */
     }
     
     // Deletes beast at the current offset

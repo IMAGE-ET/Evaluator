@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8BB961829578AB300FECE04 /* AddBestiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB961729578AB300FECE04 /* AddBestiaryView.swift */; };
 		F8E260A329560B7E007C90ED /* EvaluatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E260A229560B7E007C90ED /* EvaluatorApp.swift */; };
 		F8E260A529560B7E007C90ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E260A429560B7E007C90ED /* ContentView.swift */; };
 		F8E260A729560B80007C90ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8E260A629560B80007C90ED /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8BB961729578AB300FECE04 /* AddBestiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBestiaryView.swift; sourceTree = "<group>"; };
 		F8E2609F29560B7E007C90ED /* Evaluator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evaluator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E260A229560B7E007C90ED /* EvaluatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatorApp.swift; sourceTree = "<group>"; };
 		F8E260A429560B7E007C90ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				F8E260C529574C2B007C90ED /* AddBeastView.swift */,
 				F8E260B729570657007C90ED /* EvaluationView.swift */,
 				F8E260C129572377007C90ED /* AdvicesView.swift */,
+				F8BB961729578AB300FECE04 /* AddBestiaryView.swift */,
 				F8E260A629560B80007C90ED /* Assets.xcassets */,
 				F8E260A829560B80007C90ED /* Preview Content */,
 			);
@@ -171,6 +174,7 @@
 				F8E260CA2957660E007C90ED /* EditBeastView.swift in Sources */,
 				F8E260C8295754BC007C90ED /* BestiaryView.swift in Sources */,
 				F8E260B829570657007C90ED /* EvaluationView.swift in Sources */,
+				F8BB961829578AB300FECE04 /* AddBestiaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +303,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Evaluator/Preview Content\"";
+				DEVELOPMENT_TEAM = 69AAS8YV4B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -327,6 +332,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Evaluator/Preview Content\"";
+				DEVELOPMENT_TEAM = 69AAS8YV4B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -11,15 +11,31 @@ struct ContentView: View {
     @EnvironmentObject var dataManager: DataManager
     @FetchRequest(sortDescriptors: [SortDescriptor(\Bestiary.name)]) var bestiaries: FetchedResults<Bestiary>
     
+    @State private var showingAddBestiaryView = false
+    
     var body: some View {
         NavigationStack {
+            HStack {
+                Text("Bestiaires")
+                    .font(.title)
+                Spacer()
+                Button {
+                    showingAddBestiaryView.toggle()
+                } label: {
+                    Image(systemName: "plus.circle")
+                        .imageScale(.large)
+                }
+            }
+            .padding()
+            .sheet(isPresented: $showingAddBestiaryView) {
+                AddBestiaryView()
+            }
             List {
                 ForEach(bestiaries) {
                     bestiary in
                     BestiaryView(bestiary: bestiary)
                 }
             }
-            .navigationTitle("Bestiaires")
         }
     }
 }

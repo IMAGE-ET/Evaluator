@@ -82,6 +82,17 @@ class DataManager: ObservableObject {
         try viewContext.save()
     }
     
+    func addBestiary(bestiaryName: String) {
+        let viewContext = container.viewContext
+        
+        let bestiary = Bestiary(context: viewContext)
+        bestiary.id = UUID()
+        bestiary.name = bestiaryName
+        bestiary.beasts = []
+        
+        save()
+    }
+    
     func save() {
         if container.viewContext.hasChanges {
             try? container.viewContext.save()
