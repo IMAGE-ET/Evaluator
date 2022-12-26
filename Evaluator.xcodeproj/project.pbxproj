@@ -26,6 +26,7 @@
 /* Begin PBXFileReference section */
 		F8BB961729578AB300FECE04 /* AddBestiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBestiaryView.swift; sourceTree = "<group>"; };
 		F8BB961B29585CAE00FECE04 /* BeastElemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastElemView.swift; sourceTree = "<group>"; };
+		F8BB961D29599A4D00FECE04 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F8E2609F29560B7E007C90ED /* Evaluator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Evaluator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E260A229560B7E007C90ED /* EvaluatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluatorApp.swift; sourceTree = "<group>"; };
 		F8E260A429560B7E007C90ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		F8E2609629560B7E007C90ED = {
 			isa = PBXGroup;
 			children = (
+				F8BB961D29599A4D00FECE04 /* README.md */,
 				F8E260A129560B7E007C90ED /* Evaluator */,
 				F8E260A029560B7E007C90ED /* Products */,
 			);
