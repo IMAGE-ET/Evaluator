@@ -7,7 +7,7 @@ It allow the user to create Bestiaries (list of Beasts) of only one type for now
 
 ## Designed usage
 
-This app was first created to give deeper meaning to taunts in battle games. "I'll send you see the goddess" will be even funnier if said goddess just disrespect the loser after. If you are merciful, you can insert advices instead of taunts when creating a beast.
+This app was first created to give deeper meaning to taunts in battle games. "I'll send you see the goddess" will be even funnier if said goddess just disrespect the loser after. If you are merciful, you can insert advices instead of taunts when creating a beast. Use '\t' characters (tabs) when filling the "advices" field to have a in-game dialogue box like experience.
 
 ## Build
 
