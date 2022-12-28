@@ -12,7 +12,6 @@ struct BestiaryView: View {
     @FetchRequest var beasts: FetchedResults<Beast>
     
     @State private var showingAddView = false
-    @State private var focusedBeast: Beast?
     
     let bestiary: Bestiary
     
@@ -44,21 +43,8 @@ struct BestiaryView: View {
             AddBeastView(bestiary: bestiary)
         }
     }
-    
-    // Deletes beast at the current offset
-    private func deleteBeast(offsets: IndexSet) {
-        print(offsets)
-        withAnimation {
-            offsets.map {
-                beasts[$0]
-            }
-            .forEach(dataManager.delete)
-            
-            // Saves to our database
-            dataManager.save()
-        }
-    }
 }
+
 /*
 struct BestiaryView_Previews: PreviewProvider {
     static var previews: some View {
